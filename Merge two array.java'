@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+  public static void main(String[]args){
+    Scanner sc=new Scanner(System.in);
+    int[]arr1={1,2,3};
+    int []arr2={2,4,5};
+    int n1=arr1.length;
+    int n2=arr2.length;
+    int []merged=new int[n1+n2];
+    int k=0;
+    for(int i=0;i<n1;i++){
+      merged[k++]=arr1[i];
+    }
+    for(int i=0;i<n2;i++){
+      merged[k++]=arr2[i];
+    }
+    System.out.print("Merged Array:");
+    for(int num : merged){
+      System.out.print(num + " ");
+    }
+  }
+}
